@@ -302,68 +302,70 @@
 
 
    <!-- Card Start -->
+
 <section class="max-w-[1442px] mx-auto py-[50px] px-4">
-    <div>
-      <h2 class="text-5xl font-semibold">Our Courses</h2>
-      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-14 mt-4 gap-4">
-        <p class="text-[18px] text-[#71797e] max-w-3xl">
-          Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.<br />
-          Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
-        </p>
-        <button
-          type="submit"
-          class="bg-blue-900 flex gap-2 text-white px-6 py-2 rounded-lg"
-        >
-          <span class="font-medium text-[18px]">View All</span>
-        </button>
-      </div>
+  <div>
+    <h2 class="text-5xl font-semibold">Our Courses</h2>
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-14 mt-4 gap-4">
+      <p class="text-[18px] text-[#71797e] max-w-3xl">
+        Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.<br />
+        Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+      </p>
+      <button id="viewAllBtn"
+        type="submit"
+        class="bg-blue-900 flex gap-2 text-white px-6 py-2 rounded-lg"
+      >
+        <span class="font-medium text-[18px]">View All</span>
+      </button>
     </div>
-  
-    <!-- Cards -->
-    <div id="card" class="flex flex-col lg:flex-row gap-6 ">
-      <!-- Card 1 -->
-      <div class="bg-[#f0f0f0] rounded-2xl p-8 shadow-sm w-full lg:w-1/2">
-        <img
-          src="Assets/card1.png"
-          alt="Course"
-          class="rounded-lg w-full object-cover mb-4"
-        />
-        <div class="flex justify-between items-center my-6">
-          <div class="flex gap-2">
-            <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">4 Weeks</span>
-            <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">Beginner</span>
-          </div>
-          <p class="text-xl font-medium text-[#262626]">By John Smith</p>
+  </div>
+
+  <!-- Cards -->
+  <div id="cardContainer" class="flex flex-col lg:flex-row gap-6 ">
+    <!-- Card 1 -->
+    <div class="bg-[#f0f0f0] rounded-2xl p-8 shadow-sm w-full lg:w-1/2">
+      <img
+        src="Assets/card1.png"
+        alt="Course"
+        class="rounded-lg w-full object-cover mb-4"
+      />
+      <div class="flex justify-between items-center my-6">
+        <div class="flex gap-2">
+          <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">4 Weeks</span>
+          <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">Beginner</span>
         </div>
-        <h3 class="text-2xl font-semibold">Web Design Fundamentals</h3>
-        <p class="text-[18px] text-[#4C4C4D] my-4">
-          Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.
-        </p>
-        <a href="#" class="inline-block w-full text-center bg-blue-900 text-white py-5 rounded-lg font-medium text-[18px]">Get it Now</a>
+        <p class="text-xl font-medium text-[#262626]">By John Smith</p>
       </div>
-  
-      <!-- Card 2 -->
-      <div class="bg-[#f0f0f0] rounded-2xl p-8 shadow-sm w-full lg:w-1/2">
-        <img
-          src="Assets/card2.png"
-          alt="Course"
-          class="rounded-lg w-full object-cover mb-4"
-        />
-        <div class="flex justify-between items-center my-6">
-          <div class="flex gap-2">
-            <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">4 Weeks</span>
-            <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">Beginner</span>
-          </div>
-          <p class="text-xl font-medium text-[#262626]">By John Smith</p>
-        </div>
-        <h3 class="text-2xl font-semibold">Web Design Fundamentals</h3>
-        <p class="text-[18px] text-[#4C4C4D] my-4">
-          Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.
-        </p>
-        <a href="#" class="inline-block w-full text-center bg-blue-900 text-white py-5 rounded-lg font-medium text-[18px]">Get it Now</a>
-      </div>
+      <h3 class="text-2xl font-semibold">Web Design Fundamentals</h3>
+      <p class="text-[18px] text-[#4C4C4D] my-4">
+        Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.
+      </p>
+      <a href="#" class="inline-block w-full text-center bg-blue-900 text-white py-5 rounded-lg font-medium text-[18px]">Get it Now</a>
     </div>
-  </section>
+
+    <!-- Card 2 -->
+    <div class="bg-[#f0f0f0] rounded-2xl p-8 shadow-sm w-full lg:w-1/2">
+      <img
+        src="Assets/card2.png"
+        alt="Course"
+        class="rounded-lg w-full object-cover mb-4"
+      />
+      <div class="flex justify-between items-center my-6">
+        <div class="flex gap-2">
+          <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">4 Weeks</span>
+          <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">Beginner</span>
+        </div>
+        <p class="text-xl font-medium text-[#262626]">By John Smith</p>
+      </div>
+      <h3 class="text-2xl font-semibold">Web Design Fundamentals</h3>
+      <p class="text-[18px] text-[#4C4C4D] my-4">
+        Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.
+      </p>
+      <a href="#" class="inline-block w-full text-center bg-blue-900 text-white py-5 rounded-lg font-medium text-[18px]">Get it Now</a>
+    </div>
+  </div>
+</section>
+
   <!-- Card End -->
 
   <!-- fAQ SECTION START -->
@@ -562,5 +564,6 @@
   </div>
 </div>
         <script src="aicoach.js"></script>
+        <script src="card.js"></script>
     </body>
     </html>
