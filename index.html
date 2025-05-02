@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- daisy ui cdn start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- daisy ui cdn end -->
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font cdn end -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Icon set -->
+     <!-- font awesome cdn -->
+      <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <style>
+      .manrope {
+        font-family: "Manrope";
+      }
+    </style>
+    <title>AI-powered web application</title>
+  </head>
+  <body class="manrope  bg-[#f8f6f8]">
+
+    <header class="bg-linear-to-r from-[#d5e0f9] to-white">
+        <!-- nav section start -->
+        <nav class="max-w-[1442px] mx-auto">
+          <div class="navbar pt-[30px]">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pricing</a></li>
+                  <li><a>Consulting</a></li>
+                  <li id="aicoach-manu-mobile"><a>AiCoach</a></li>
+                </ul>
+              </div>
+              <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+              <img src="Assets/Frame 427321848.svg" alt="" />
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="font-semibold text-[14px]"><a>Home</a></li>
+                <li class="font-semibold text-[14px]"><a>About</a></li>
+                <li class="font-semibold text-[14px]"><a>Pricing</a></li>
+                <li class="font-semibold text-[14px]"><a>Consulting</a></li>
+                <li id="aicoach-manu" class="font-semibold text-[14px]"><a>AiCoach</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn rounded-3xl font-bold text-[16px] border-black"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </nav>
+        <!-- nav section end -->
+
+        <!-- banner section start -->
+        <section class="max-w-[1442px] mx-auto px-4 pb-28 flex flex-col-reverse lg:flex-row items-center">
+            <!-- Left Content -->
+            <div class="flex-1 mt-28">
+              <h1 class="text-[80px] font-medium leading-tight mb-6 text-center sm:text-left">
+                Your AI-<br />
+                Powered<br />
+                Sales Coach
+              </h1>
+          
+              <div class="flex items-center gap-16 mb-[94px] mt-[26px] flex-col sm:flex-row">
+                <div class="shadow-2xl">
+                  <img
+                    src="Assets/heroimg.png"
+                    alt="Mini robot"
+                    class="object-contain rounded-xl bg-[#eef1f8]"
+                  />
+                </div>
+                <p class="font-medium text-xl text-[#71797e] text-center sm:text-left">
+                  Get real-time coaching, script <br />
+                  suggestions, and deal-closing <br />
+                  strategies powered by advanced <br> AI technology.
+                </p>
+              </div>
+          
+              <!-- Stats -->
+             
+
+            
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center ">
+                <!-- Card 1 -->
+                <div class="flex items-center gap-6">
+                  <div class="bg-white p-4 rounded-lg shadow-xl w-fit mx-auto sm:mx-0">
+                    <img
+                      src="Assets/backup_table.png"
+                      alt="Protection Icon"
+                      class="w-[88px] h-[88px]"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[40px] font-semibold mt-2">2000+</h3>
+                    <p class="text-[18px] font-medium text-gray-500">Your protection</p>
+                  </div>
+                </div>
+              
+                <!-- Card 2 -->
+                <div class="flex items-center gap-6">
+                  <div class="bg-white p-4 rounded-lg shadow-xl w-fit mx-auto sm:mx-0">
+                    <img
+                      src="Assets/atr.png"
+                      alt="Tailored Icon"
+                      class="w-[88px] h-[88px]"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="text-[40px] font-semibold mt-2">7001+</h3>
+                    <p class="text-[18px] font-medium text-gray-500">Provide tailored</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+        <!-- left content -->
+
+            <div class="flex-1 relative w-full max-w-lg">
+  <!-- Image -->
+  <img
+    src="Assets/image.png"
+    alt="AI Robot"
+    class="rounded-[40px_0_40px_0] w-full h-auto object-cover mx-auto"
+  />
+
+  <!-- Floating Card for Large Screens -->
+  <div
+    class="hidden lg:block absolute -bottom-28 -left-40 bg-white rounded-3xl py-[50px] px-6 w-[428px] shadow-xl"
+  >
+    <div class="flex justify-between text-blue-900 font-semibold text-[50px] mb-2">
+      <span>721+</span>
+      <span>1000+</span>
+    </div>
+    <p class="font-semibold text-3xl my-6 text-gray-700">
+      Growth is our priority.
+    </p>
+    <p class="mt-1 font-medium text-xl text-[#71797e]">
+      As a full-service business agency, we specialize in helping companies of all sizes optimize their operations.
+    </p>
+  </div>
+
+  <!-- Inline Card for Small Screens -->
+  <div class="block lg:hidden mt-6 bg-white rounded-3xl py-[40px] px-6 w-full shadow-xl">
+    <div class="flex justify-between text-blue-900 font-semibold text-[36px] mb-2">
+      <span>721+</span>
+      <span>1000+</span>
+    </div>
+    <p class="font-semibold text-2xl my-4 text-gray-700">
+      Growth is our priority.
+    </p>
+    <p class="mt-1 font-medium text-lg text-[#71797e]">
+      As a full-service business agency, we specialize in helping companies of all sizes optimize their operations.
+    </p>
+  </div>
+</div>
+
+          </section>
+        <!-- banner section end -->
+       </header>
+       <main>
+
+        <!-- ai coach section start -->
+         <section id="aicoach-section" class="bg-gradient-to-r from-[#092365] to-[#0567e3] px-4 lg:px-56 py-16 text-white">
+    <!-- Header -->
+    <div class="mb-8">
+      <p class="text-yellow-300 text-2xl sm:text-base">Live Ai Coach</p>
+      <h1 class="text-4xl sm:text-3xl lg:text-6xl font-normal mt-5 mb-14">Take a Suggestion Coaching</h1>
+    </div>
+  
+    <!-- Main Layout -->
+    <div class="flex flex-col lg:flex-row gap-6">
+      <!-- Left Section -->
+      <div class="bg-white rounded-3xl w-full lg:w-2/3 text-black relative">
+        <h2 class="font-semibold text-lg px-4 sm:px-6 pt-4 mb-4">AI Sales Coach</h2>
+  
+        <!-- Message Box -->
+         <div id="chatBox" class=" bg-gray-100 p-6 gap-6 min-h-80 overflow-y-auto">
+            <div class="flex justify-start items-start gap-6">
+                <div class="avatar avatar-placeholder">
+                  <div class="bg-zinc-200 text-neutral-content w-10 rounded-full"></div>
+                </div>
+                <div class="bg-white p-4 rounded-lg mb-6 w-full max-w-xl">
+                  Hello! I'm your AI sales coach. How can I help you improve your
+                  sales performance today?
+                </div>
+              </div>
+         </div>
+        
+  
+        <!-- Predefined Options -->
+        <div class="flex flex-wrap gap-2 px-4 sm:px-6 m-4">
+          <button class="suggestion-btn bg-[#ebeef3] text-[#415f8e] px-3 py-1 rounded-full text-sm">How do I handle objections?</button>
+          <button class="suggestion-btn bg-[#ebeef3] text-[#415f8e] px-3 py-1 rounded-full text-sm">Give me a cold email template</button>
+          <button class="suggestion-btn bg-[#ebeef3] text-[#415f8e] px-3 py-1 rounded-full text-sm">Closing techniques</button>
+          <button class="suggestion-btn bg-[#ebeef3] text-[#415f8e] px-3 py-1 rounded-full text-sm">Negotiation tips</button>
+        </div>
+  
+        <!-- Input Box -->
+        <form class="flex flex-col sm:flex-row items-stretch gap-2 mt-2 px-4 sm:px-6 justify-end">
+          <input id="chatInput" type="text" placeholder="Ask anything you need" class="flex-grow p-2 border border-gray-300 rounded-lg"/>
+          <button id="sendBtn" type="submit" class="bg-blue-900 flex gap-2 text-white px-6 py-2 rounded-lg">
+            <span class="font-medium text-[18px]">Send</span>
+            <img src="Assets/ArrowUp.png" alt="" />
+          </button>
+        </form>
+      </div>
+  
+      <!-- Middle: Icon Bar -->
+      <div class="w-full lg:w-1/12 flex items-center justify-center mt-6 lg:mt-0">
+        <div class="bg-gray-100 rounded-full py-6 px-6 flex flex-col items-center space-y-8 shadow">
+          <i class="ph ph-arrow-counter-clockwise text-xl text-gray-700"></i>
+          <i class="ph ph-thumbs-up text-xl text-black"></i>
+          <i class="ph ph-thumbs-down text-xl text-gray-700"></i>
+          <i class="ph ph-clipboard-text text-xl text-gray-700"></i>
+          <i class="ph ph-speaker-high text-xl text-gray-700"></i>
+        </div>
+      </div>
+  
+      <!-- Right Section -->
+      <div class="flex flex-col gap-6 w-full lg:w-1/3 mt-6 lg:mt-0">
+        <!-- Real-time Analysis -->
+        <div class="bg-[#efefef] text-black rounded-3xl p-6">
+          <h2 class="font-bold text-[32px] mb-4">Real-time Analysis</h2>
+          <div class="mb-4 bg-white p-4 rounded-md">
+            <div class="font-medium text-sm mb-1 flex gap-4">
+              <img src="Assets/Nodes.png" alt="" />
+              <p class="font-semibold text-[18px]">Confidence Level</p>
+            </div>
+            <div class="flex gap-2">
+              <div class="w-full bg-gray-300 rounded h-2 mt-1">
+                <div class="bg-green-500 h-2 rounded" style="width: 60%"></div>
+              </div>
+              <p class="text-gray-600 text-xs">60%</p>
+            </div>
+          </div>
+          <div class="bg-white p-4 rounded-md">
+            <div class="font-medium text-sm mb-1 flex gap-4">
+              <img src="Assets/Frame.png" alt="" />
+              <p class="font-semibold text-[18px]">Confidence Level</p>
+            </div>
+            <p class="text-gray-600 text-sm">85% improvement in objection handling</p>
+          </div>
+        </div>
+  
+        <!-- Quick Actions -->
+        <div class="bg-gray-100 text-black rounded-3xl p-6">
+          <h2 class="font-bold text-[32px] mb-4">Quick Actions</h2>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-xl shadow text-center font-semibold flex flex-col items-start justify-center">
+              <img src="Assets/frame2.png" alt="" />
+              <p>Generate Script</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow text-center font-semibold flex flex-col items-start justify-center">
+              <img src="Assets/frame3.png" alt="" />
+              <p>Practice Pitch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ai coach section end -->
+
+
+   <!-- Card Start -->
+<section class="max-w-[1442px] mx-auto py-[50px] px-4">
+    <div>
+      <h2 class="text-5xl font-semibold">Our Courses</h2>
+      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-14 mt-4 gap-4">
+        <p class="text-[18px] text-[#71797e] max-w-3xl">
+          Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et.<br />
+          Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
+        </p>
+        <button
+          type="submit"
+          class="bg-blue-900 flex gap-2 text-white px-6 py-2 rounded-lg"
+        >
+          <span class="font-medium text-[18px]">View All</span>
+        </button>
+      </div>
+    </div>
+  
+    <!-- Cards -->
+    <div id="card" class="flex flex-col lg:flex-row gap-6 ">
+      <!-- Card 1 -->
+      <div class="bg-[#f0f0f0] rounded-2xl p-8 shadow-sm w-full lg:w-1/2">
+        <img
+          src="Assets/card1.png"
+          alt="Course"
+          class="rounded-lg w-full object-cover mb-4"
+        />
+        <div class="flex justify-between items-center my-6">
+          <div class="flex gap-2">
+            <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">4 Weeks</span>
+            <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">Beginner</span>
+          </div>
+          <p class="text-xl font-medium text-[#262626]">By John Smith</p>
+        </div>
+        <h3 class="text-2xl font-semibold">Web Design Fundamentals</h3>
+        <p class="text-[18px] text-[#4C4C4D] my-4">
+          Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.
+        </p>
+        <a href="#" class="inline-block w-full text-center bg-blue-900 text-white py-5 rounded-lg font-medium text-[18px]">Get it Now</a>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="bg-[#f0f0f0] rounded-2xl p-8 shadow-sm w-full lg:w-1/2">
+        <img
+          src="Assets/card2.png"
+          alt="Course"
+          class="rounded-lg w-full object-cover mb-4"
+        />
+        <div class="flex justify-between items-center my-6">
+          <div class="flex gap-2">
+            <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">4 Weeks</span>
+            <span class="bg-white text-[#4C4C4D] text-[18px] font-medium px-4 py-2 rounded-xl">Beginner</span>
+          </div>
+          <p class="text-xl font-medium text-[#262626]">By John Smith</p>
+        </div>
+        <h3 class="text-2xl font-semibold">Web Design Fundamentals</h3>
+        <p class="text-[18px] text-[#4C4C4D] my-4">
+          Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.
+        </p>
+        <a href="#" class="inline-block w-full text-center bg-blue-900 text-white py-5 rounded-lg font-medium text-[18px]">Get it Now</a>
+      </div>
+    </div>
+  </section>
+  <!-- Card End -->
+
+  <!-- fAQ SECTION START -->
+
+  <section class="px-8 py-6 sm:px-4 sm:py-4 max-w-[1442px] mx-auto">
+    <div class="flex flex-col sm:flex-row justify-center items-start">
+      <p class="w-full sm:w-1/3 text-[#132c57] font-medium mb-4 sm:mb-2 text-2xl sm:text-xl">
+        Frequently asked <br> questions
+      </p>
+      <h2 class="w-full sm:w-3/4 text-4xl sm:text-6xl leading-snug mb-6 sm:mb-12">
+        Constant collaboration is how we roll. Let’s see if we are a good fit.
+      </h2>
+    </div>
+  
+    <!-- FAQ Item 1 -->
+    <details open class="group py-6">
+      <summary class="flex justify-between items-center cursor-pointer list-none">
+        <div class="flex space-x-4">
+          <span class="text-yellow-700 text-[30px] sm:text-[40px] font-medium">01</span>
+          <span class="text-[30px] sm:text-[40px] font-normal">Why should I choose Humestic?</span>
+        </div>
+        <span class="text-6xl sm:text-7xl transition-transform duration-300">
+          <span class="block group-open:hidden">-</span>
+          <span class="hidden group-open:block">+</span>
+        </span>
+      </summary>
+      <p class="mt-4 text-sm sm:text-[16px] font-light text-gray-500">
+        Bottleneck mice my capacity is full, nor incentivization we need to start advertising on social media, or helicopter view, for what the. Let’s put a pin in that we need to build it so that it scales, are there any leftovers in the kitchen?, if you're not hurting you're not winning loop back.
+      </p>
+    </details>
+  
+    <!-- FAQ Item 2 -->
+    <details class="group border-t border-gray-300 py-6">
+      <summary class="flex justify-between items-center cursor-pointer list-none">
+        <div class="flex space-x-4">
+          <span class="text-yellow-700 text-[30px] sm:text-[40px] font-medium">02</span>
+          <span class="text-[30px] sm:text-[40px] font-normal">I like your works, how do we start a project?</span>
+        </div>
+        <span class="text-6xl sm:text-7xl transition-transform duration-300">
+          <span class="block group-open:hidden">-</span>
+          <span class="hidden group-open:block">+</span>
+        </span>
+      </summary>
+      <p class="mt-4 text-sm sm:text-[16px] font-light text-gray-500">
+        Bottleneck mice my capacity is full, nor incentivization we need to start advertising on social media, or helicopter view, for what the. Let’s put a pin in that we need to build it so that it scales, are there any leftovers in the kitchen?, if you're not hurting you're not winning loop back.
+      </p>
+    </details>
+  
+    <!-- FAQ Item 3 -->
+    <details class="group border-t border-b border-gray-300 py-6">
+      <summary class="flex justify-between items-center cursor-pointer list-none">
+        <div class="flex space-x-4">
+          <span class="text-yellow-700 text-[30px] sm:text-[40px] font-medium">03</span>
+          <span class="text-[30px] sm:text-[40px] font-normal">What info is required to get a quotation?</span>
+        </div>
+        <span class="text-6xl sm:text-7xl transition-transform duration-300">
+          <span class="block group-open:hidden">-</span>
+          <span class="hidden group-open:block">+</span>
+        </span>
+      </summary>
+      <p class="mt-4 text-sm sm:text-[16px] font-light text-gray-500">
+        Bottleneck mice my capacity is full, nor incentivization we need to start advertising on social media, or helicopter view, for what the. Let’s put a pin in that we need to build it so that it scales, are there any leftovers in the kitchen?, if you're not hurting you're not winning loop back.
+      </p>
+    </details>
+  </section>
+  
+  <!-- fAQ SECTION END -->
+   <!-- ai team start -->
+   <section class="max-w-[1280px] mx-auto px-6 py-20">
+    <!-- Quote -->
+    <blockquote class="text-4xl md:text-3xl font-semibold leading-relaxed mb-10">
+      “They thoroughly analyze our industry and target audience, allowing
+      them to develop customized campaigns that effectively reach and engage
+      our customers. Their creative ideas and cutting-edge techniques have
+      helped us stay ahead of the competition.”
+    </blockquote>
+  
+    <!-- Author + Controls -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <!-- Author Info -->
+      <div class="flex items-center gap-4">
+        <div class="w-14 h-14 rounded-full bg-gray-300"></div>
+        <div>
+          <p class="font-semibold">Michael Kaizer</p>
+          <p class="text-sm text-gray-500">CEO of Basecamp Corp</p>
+        </div>
+      </div>
+  
+      <!-- Pagination Arrows -->
+      <div class="flex items-center space-x-4">
+        <!-- Left Arrow -->
+        <button class="w-14 h-14 rounded-full border border-blue-900 text-blue-900 flex items-center justify-center hover:bg-blue-100 transition">
+          <img src="Assets/arrow-right (1).png" alt="Previous" class="rotate-180 w-5" />
+        </button>
+  
+        <!-- Pagination Count -->
+        <span class="text-xl font-semibold text-[#99979d]">
+          <span class="text-[#0d2c68] underline">01</span>/05
+        </span>
+  
+        <!-- Right Arrow -->
+        <button class="w-14 h-14 rounded-full bg-blue-900 text-white flex items-center justify-center hover:bg-blue-800 transition">
+          <img src="Assets/arrow-right.png" alt="Next" class="w-5" />
+        </button>
+      </div>
+    </div>
+  </section>
+  
+   <!-- ai team end -->
+    </main>
+    <!-- CTA Banner Section -->
+  <div class="bg-gradient-to-r from-[#d5e0f9] to-white pt-6">
+    <section class="max-w-[1440px] mx-auto bg-gradient-to-r from-[#103570] to-[#004FCE] text-white rounded-3xl mt-8 py-20 px-4 text-center">
+      <h2 class="text-[28px] sm:text-[34px] md:text-[38px] font-semibold">Ready to Hire Smarter?</h2>
+      <p class="text-[16px] mb-10 mt-3 text-[#B9BDC7]">
+        Unlock Exclusive Insights. Subscribe to Our Newsletter.
+      </p>
+      <a href="#" class="inline-block bg-[#FCE38A] text-black px-8 py-3 rounded-full font-medium text-[16px] hover:bg-yellow-400 transition">
+        Join Now
+      </a>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="max-w-[1440px] mx-auto  px-4 sm:px-6 lg:px-12 pt-[112px] pb-[50px]">
+      <div class="grid grid-cols-1 md:grid-cols-7 gap-10">
+        
+        <!-- Logo & Description -->
+        <div class="space-y-4 md:col-span-4">
+          <div class="flex items-center space-x-2">
+            <img src="Assets/footerlogo.png" alt="Logo" class="h-10 w-auto" />
+          </div>
+          <p class="text-sm text-[#4a5568] py-4">
+            SalesRank.AI offers a comprehensive suite of AI-powered solutions to help you find expert sales professionals who can elevate every aspect of your business. From performance rankings and skill verification to industry benchmarking and real-time analytics, we provide the insights and tools to optimize your sales strategy and drive growth.
+          </p>
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center">
+              <i class="fa-brands fa-facebook-f text-[#18418a]"></i>
+            </div>
+            <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center">
+              <i class="fa-brands fa-twitter text-[#18418a]"></i>
+            </div>
+            <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center">
+              <i class="fa-brands fa-linkedin-in text-[#18418a]"></i>
+            </div>
+            <div class="bg-white w-8 h-8 rounded-full flex items-center justify-center">
+              <i class="fa-brands fa-instagram text-[#18418a]"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <h3 class="font-semibold text-lg mb-6 text-[#001C4A]">Navigation</h3>
+          <ul class="space-y-4 text-sm text-[#335386]">
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Agency</a></li>
+            <li><a href="#">Case Study</a></li>
+            <li><a href="#">Resource</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- License -->
+        <div>
+          <h3 class="font-semibold text-lg mb-6 text-[#001C4A]">Licence</h3>
+          <ul class="space-y-4 text-sm text-[#335386]">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Copyright</a></li>
+            <li><a href="#">Email Address</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="font-semibold text-lg mb-6 text-[#001C4A]">Contact</h3>
+          <ul class="space-y-4 text-sm text-[#335386]">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone fa-lg"></i> (406) 555-0120
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope fa-lg"></i> Hey@boostim.com
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot fa-lg pt-1"></i>
+              <span>2972 Westheimer Rd. Santa Ana, Illinois 85486</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- Footer Bottom Divider -->
+    <div class="border-t border-gray-300 h-20 mt-6"></div>
+  </div>
+</div>
+        <script src="aicoach.js"></script>
+    </body>
+    </html>
