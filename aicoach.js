@@ -52,3 +52,10 @@ const aiCoachBtnMobile = document.getElementById("aicoach-manu-mobile")
         appendMessage(btn.innerText, "user");
       });
     });
+
+    //  clear history
+document.getElementById("clear-history-btn").addEventListener("click",()=>{
+  const chatBox = document.getElementById("chatBox");
+    chatBox.innerHTML=""
+//  document.getElementById("history-container").style.display="none"
+})
